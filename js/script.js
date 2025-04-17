@@ -14,7 +14,7 @@ import initFuncionamento from "./modules/funcionamento.js";
 const scrollSuave = new ScrollSuave('[data-menu="suave"] a[href^="#"]');
 scrollSuave.init();
 
-//Accordion
+//Accordion list
 const accordion = new Accordion('[data-anime="accordion"] dt');
 accordion.init();
 
