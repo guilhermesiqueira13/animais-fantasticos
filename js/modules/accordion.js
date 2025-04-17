@@ -3,22 +3,26 @@ export default class Accordion {
     this.accordionList = document.querySelectorAll(list);
     this.activeClass = "ativo";
   }
+
   toggleAccordion(item) {
-    this.classList.toggle(this.activeClass);
-    this.nextElementSibling.classList.toggle(this.activeClass);
+    item.classList.toggle(this.activeClass);
+    item.nextElementSibling.classList.toggle(this.activeClass);
   }
-  //Adiciona os eventos ao accordion
+
+  // Adiciona os eventos ao accordion
   addAccordionEvent() {
     this.accordionList.forEach((item) => {
-      item.addEventlistener("click", () => this.toggleAccordion(item));
+      item.addEventListener("click", () => this.toggleAccordion(item)); // Corrigido 'addEventlistener'
     });
   }
-  //Iniciar função
+
+  // Iniciar função
   init() {
     if (this.accordionList.length) {
-      //Ativar primeiro item
+      // Ativar primeiro item
       this.toggleAccordion(this.accordionList[0]);
       this.addAccordionEvent();
     }
+    return this;
   }
 }
