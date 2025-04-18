@@ -44,8 +44,6 @@ scrollAnima.init();
 initFuncionamento();
 initDropDownMenu();
 initMenuMobile();
-fetchAnimais();
-fetchBitcoin();
 
 fetchAnimais("../../animaisapi.json", ".numeros-grid");
 fetchBitcoin("https://blockchain.info/ticker", ".btc-preco");
