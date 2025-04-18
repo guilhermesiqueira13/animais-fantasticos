@@ -1,4 +1,4 @@
-import AnimaNumeros from "./animaNumeros.js";
+import AnimaNumeros from "../animations/animaNumeros.js";
 
 export default function fetchAnimais(url, target) {
   // Cria a div contendo informações
