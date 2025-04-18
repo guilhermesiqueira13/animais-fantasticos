@@ -1,4 +1,4 @@
-import outsideClick from "./outsideclick.js";
+import outsideClick from "../utils/outsideclick.js";
 
 export default class DropdownMenu {
   constructor(dropdownMenus, events) {
