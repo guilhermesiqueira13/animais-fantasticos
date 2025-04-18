@@ -8,24 +8,24 @@ import DropdownMenu from "./modules/dropDownMenu.js";
 import MenuMobile from "./modules/menuMobile.js";
 import fetchAnimais from "./modules/fetch-animais.js";
 import fetchBitcoin from "./modules/fetch-bitcoin.js";
-import initFuncionamento from "./modules/funcionamento.js";
+import Funcionamento from "./modules/funcionamento.js";
 
-//Scroll suave
+// Scroll suave
 const scrollSuave = new ScrollSuave('[data-menu="suave"] a[href^="#"]');
 scrollSuave.init();
 
-//Accordion
+// Accordion
 const accordion = new Accordion('[data-anime="accordion"] dt');
 accordion.init();
 
-//Tabnav
+// Tabnav
 const tabnav = new TabNav(
   '[data-tab="menu"] li',
   '[data-tab="content"] section'
 );
 tabnav.init();
 
-//Modal
+// Modal
 const modal = new Modal(
   '[data-modal="abrir"]',
   '[data-modal="fechar"]',
@@ -33,11 +33,11 @@ const modal = new Modal(
 );
 modal.init();
 
-//Tooltip
+// Tooltip
 const tooltip = new Tooltip("[data-tooltip]");
 tooltip.init();
 
-//Animacao do scroll
+// Animacao do scroll
 const scrollAnima = new ScrollAnima('[data-anime="scroll"]');
 scrollAnima.init();
 
@@ -49,7 +49,9 @@ dropdownMenu.init();
 const menuMobile = new MenuMobile('[data-menu="button"]', '[data-menu="list"]');
 menuMobile.init();
 
-initFuncionamento();
+// Funcionamento
+const funcionamento = new Funcionamento("[data-semana]", "aberto");
+funcionamento.init();
 
 fetchAnimais("../../animaisapi.json", ".numeros-grid");
 fetchBitcoin("https://blockchain.info/ticker", ".btc-preco");
