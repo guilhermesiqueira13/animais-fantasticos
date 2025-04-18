@@ -1,13 +1,13 @@
-import ScrollSuave from "./modules/navigation/scroll-suave.js";
-import ScrollAnima from "./modules/animations/scroll-anima.js";
+import ScrollSuave from "./modules/navigation/scrollSuave.js";
+import ScrollAnima from "./modules/animations/scrollAnima.js";
 import Accordion from "./modules/components/accordion.js";
-import TabNav from "./modules/components/tab-nav.js";
+import TabNav from "./modules/components/tabNav.js";
 import Modal from "./modules/components/modal.js";
 import Tooltip from "./modules/components/tooltip.js";
 import DropdownMenu from "./modules/components/dropDownMenu.js";
 import MenuMobile from "./modules/components/menuMobile.js";
-import fetchAnimais from "./modules/data/fetch-animais.js";
-import fetchBitcoin from "./modules/data/fetch-bitcoin.js";
+import fetchAnimais from "./modules/data/fetchAnimais.js";
+import fetchBitcoin from "./modules/data/fetchBitcoin.js";
 import Funcionamento from "./modules/core/funcionamento.js";
 
 // Scroll suave
