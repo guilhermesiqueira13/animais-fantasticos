@@ -35,4 +35,8 @@
     font-size: 1rem;
     color: #ee5544;
   }
+  .numeros-grid h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+  }
 }
